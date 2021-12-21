@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doctor Secret Room</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section th:fragment="nodoctor">
+    <h1 th:text="|Welcome John Smith!|">Hello World!</h1>
+    <h3 th:text="|Your number is 0!|">Hello Universe!</h3>
+</section>
+<section th:fragment="doctor">
+    <h1 th:text="|Welcome ${name}!|">Hello World!</h1>
+    <h3 th:text="|Your number is ${number}!|">Hello Universe!</h3>
+</section>
+</body>
+</html>

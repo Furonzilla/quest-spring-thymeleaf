@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header th:replace="fragments/header :: header"></header>
-<section th:replace="fragments/doctorname :: ${name} ? 'doctor' : 'nodoctor'">
-</section>
-<footer th:replace="fragments/footer :: footer"></footer>
+<header th:fragment="header">
+    <nav>
+        <span>Doctor Secret Service</span>
+        <a href="/">Sign In</a>
+    </nav>
+</header>
 </body>
 </html>
